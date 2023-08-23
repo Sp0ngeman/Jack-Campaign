@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import arrowSvg from "../images/down-arrow.svg";
 
 /**
  * About background image
@@ -78,6 +79,9 @@ const About = () => {
         </ul>
         <hr />
         <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+      </div>
+      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
+        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
       </div>
     </section>
   );
