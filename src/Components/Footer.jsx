@@ -35,7 +35,7 @@ const Footer = ({ email }) => {
     >
       {email && (
         <a
-          href="mailto:jack.fitch@sydstu.catholic.edu.au?subject=SendMail&body=Description"
+          href="mailto:jack.fitch@sydstu.catholic.edu.au?subject=My Enquiry&body=Hey there Jack, I'm contacting you because..."
           target="_blank"
           rel="noopener noreferrer"
         >
