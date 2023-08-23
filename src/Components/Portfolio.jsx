@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/UN-Room.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "UN General Assembly Room";
 
 /**
  * Project list
@@ -34,25 +34,25 @@ const projectList = [
     title: "Things to know about me😎",
     description:
       "I live for the game of Rugby and have been playing it for as long as I can remember. I also have a great passion for food as you can tell.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   },
   {
     title: "What have I done?",
     description:
       "I have had the privlidge to work with so many great people in my time as a charity worker. I have been able to meet people and hear stories.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    url: "https://www.sydneyfoodtrucks.com.au",
   },
   {
-    title: "My Resume Site",
+    title: "Charity Work",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "I thrive in the enjoyment I get from helping the people who aren't as fortunate as I am, this is only one of the reasons I love charity work.",
+    url: "https://www.redcross.org.au",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Sports",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Rugby, swimming, athletics. I love doing and supporting it all, so voice me your ideas and lets make something happen.",
+    url: "https://www.world.rugby",
   },
 ];
 
