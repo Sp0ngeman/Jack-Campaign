@@ -1,13 +1,13 @@
 import React from "react";
 
-const scrollToSection = (sectionId) => {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
 const Header = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       style={{
@@ -22,16 +22,16 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a onClick={() => scrollToSection("Home")} href="#home">
+      <a onClick={() => scrollToSection("main")} href="#main">
         Home
       </a>
-      <a onClick={() => scrollToSection("About")} href="#about">
+      <a onClick={() => scrollToSection("about")} href="#about">
         About
       </a>
-      <a onClick={() => scrollToSection("Portfolio")} href="#portfolio">
+      <a onClick={() => scrollToSection("portfolio")} href="#portfolio">
         Portfolio
       </a>
-      <a onClick={() => scrollToSection("Contact")} href="#footer">
+      <a onClick={() => scrollToSection("footer")} href="#footer">
         Contact
       </a>
     </div>

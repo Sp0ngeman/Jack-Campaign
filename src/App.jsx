@@ -40,12 +40,17 @@ const secondaryColor = "#D2F1E4";
 
 const App = () => {
   return (
-    <div id="main">
+    <div>
       <Header />
-      <Home name={siteProps.name} title={siteProps.title} />
-      <About />
-      <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <Home id="main" name={siteProps.name} title={siteProps.title} />
+      <About id="about" />
+      <Portfolio id="portfolio" />
+      <Footer
+        id="footer"
+        {...siteProps}
+        primaryColor={primaryColor}
+        secondaryColor={secondaryColor}
+      />
     </div>
   );
 };
