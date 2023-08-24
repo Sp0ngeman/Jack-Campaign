@@ -22,7 +22,7 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a onClick={() => scrollToSection("main")} href="#main">
+      <a onClick={() => scrollToSection("home")} href="#home">
         Home
       </a>
       <a onClick={() => scrollToSection("about")} href="#about">
