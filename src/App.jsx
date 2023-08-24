@@ -42,7 +42,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Home id="main" name={siteProps.name} title={siteProps.title} />
+      <Home id="home" name={siteProps.name} title={siteProps.title} />
       <About id="about" />
       <Portfolio id="portfolio" />
       <Footer
