@@ -1,12 +1,12 @@
 import React from "react";
 
 const Header = () => {
-  const scrollToSection = (sectionId) => {
+  function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }
 
   return (
     <div
