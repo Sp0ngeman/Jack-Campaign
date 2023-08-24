@@ -54,7 +54,7 @@ const Home = ({ name, title }) => {
         <h1>{name}</h1>
         <h2>{title}</h2>
       </div>
-      <div
+      <button
         style={{
           display: "flex",
           alignItems: "center",
@@ -62,11 +62,14 @@ const Home = ({ name, title }) => {
           marginLeft: "auto",
           marginRight: "auto",
           marginBottom: "3rem",
+          cursor: "pointer",
+          background: "transparent",
+          border: "none",
         }}
-      >
         onClick={handleArrowClick}
+      >
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
-      </div>
+      </button>
     </section>
   );
 };
