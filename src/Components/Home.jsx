@@ -13,10 +13,10 @@ import image from "../images/Jack-Field.png";
 
 const Home = ({ name, title }) => {
   const handleArrowClick = () => {
-    // Scroll to the 'portfolio' section
-    const portfolioSection = document.getElementById("portfolio");
-    if (portfolioSection) {
-      portfolioSection.scrollIntoView({ behavior: "smooth" });
+    // Scroll to the 'about' section
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
   /**
