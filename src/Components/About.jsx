@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
 
 import image from "../images/motion-background.jpg";
@@ -6,11 +6,7 @@ import image from "../images/motion-background.jpg";
 const imageAltText = "purple and blue abstract background";
 
 const About = () => {
-  const [setIsArrowClicked] = useState(false);
-
   const handleArrowClick = () => {
-    setIsArrowClicked(true);
-
     // Scroll to the 'portfolio' section
     const portfolioSection = document.getElementById("portfolio");
     if (portfolioSection) {
