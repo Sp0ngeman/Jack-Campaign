@@ -1,15 +1,7 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
-  const scrollToRef = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const homeRef = React.useRef(null);
-  const aboutRef = React.useRef(null);
-  const portfolioRef = React.useRef(null);
-  const contactRef = React.useRef(null);
-
   return (
     <div
       style={{
@@ -24,24 +16,18 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a href="#home" onClick={() => scrollToRef(homeRef)}>
+      <Link to="home" smooth={true} duration={500}>
         Home
-      </a>
-      <a href="#about" onClick={() => scrollToRef(aboutRef)}>
+      </Link>
+      <Link to="about" smooth={true} duration={500}>
         About
-      </a>
-      <a href="#portfolio" onClick={() => scrollToRef(portfolioRef)}>
+      </Link>
+      <Link to="portfolio" smooth={true} duration={500}>
         Portfolio
-      </a>
-      <a href="#footer" onClick={() => scrollToRef(contactRef)}>
+      </Link>
+      <Link to="footer" smooth={true} duration={500}>
         Contact
-      </a>
-
-      {/* Invisible anchor points for smooth scrolling */}
-      <div id="home" ref={homeRef}></div>
-      <div id="about" ref={aboutRef}></div>
-      <div id="portfolio" ref={portfolioRef}></div>
-      <div id="footer" ref={contactRef}></div>
+      </Link>
     </div>
   );
 };
