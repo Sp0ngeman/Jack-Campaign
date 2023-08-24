@@ -1,12 +1,15 @@
-/**
- * Header component
- *
- * Top navigation bar for your site. Set to remain visible as the
- * user scrolls so that they can constantly reach any part of your page.
- */
 import React from "react";
 
 const Header = () => {
+  const scrollToRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const homeRef = React.useRef(null);
+  const aboutRef = React.useRef(null);
+  const portfolioRef = React.useRef(null);
+  const contactRef = React.useRef(null);
+
   return (
     <div
       style={{
@@ -21,10 +24,24 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#footer">Contact</a>
+      <a href="#home" onClick={() => scrollToRef(homeRef)}>
+        Home
+      </a>
+      <a href="#about" onClick={() => scrollToRef(aboutRef)}>
+        About
+      </a>
+      <a href="#portfolio" onClick={() => scrollToRef(portfolioRef)}>
+        Portfolio
+      </a>
+      <a href="#footer" onClick={() => scrollToRef(contactRef)}>
+        Contact
+      </a>
+
+      {/* Invisible anchor points for smooth scrolling */}
+      <div id="home" ref={homeRef}></div>
+      <div id="about" ref={aboutRef}></div>
+      <div id="portfolio" ref={portfolioRef}></div>
+      <div id="footer" ref={contactRef}></div>
     </div>
   );
 };
