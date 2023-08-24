@@ -6,7 +6,7 @@ import image from "../images/motion-background.jpg";
 const imageAltText = "purple and blue abstract background";
 
 const About = () => {
-  const [isArrowClicked, setIsArrowClicked] = useState(false);
+  const [setIsArrowClicked] = useState(false);
 
   const handleArrowClick = () => {
     setIsArrowClicked(true);
@@ -88,7 +88,7 @@ const About = () => {
               style={{
                 height: "3rem",
                 width: "3rem",
-                filter: isArrowClicked ? "invert(100%)" : "none",
+                filter: "invert(100%)",
               }}
               alt="Arrow"
             />
